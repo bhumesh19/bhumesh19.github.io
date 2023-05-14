@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="resume5.css"/>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="top-section">
+            <!-- <img src="image/profile.png" class="profile" /> -->
+            <!-- <div class="center" -->
+                <div class="profile-img"><img src="emp.jpg" alt="" id="profile-pic" class="center">
+
+                <label for="input-file" id="l22">update image</label>
+
+                <input type="file" name="" id="input-file" accept="image/jpeg, image/png, image/jpg">
+
+            </div> 
+            <div class="head1">
+          <div class="head4">
+                <input type="text" name="Name" placeholder="Name" id="n1">
+                <span></span>
+                <i></i>
+                </div>
+                <div class="head3">
+            <input type="text" name="Name" placeholder="Role" id="r1">
+            <span></span>
+            <i></i>
+            </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+<div class="endo">
+        <div class="col-div-4">
+            <div class="content-box" style="padding-left: 40px;">
+
+               
+            <p class="head">Contact</p>
+            <p class="p3"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;&nbsp;<span><input type="text" name="phone" placeholder="phone" id="text1"></span></p>
+            <p class="p3"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;<span><input type="text" name="Name" placeholder="gmail" id="text1"></span></p>
+            <p class="p3"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;<span><input type="text" name="Name" placeholder="country" id="text1"></span></p>
+           
+
+            <br/>
+            <p class="head">my skills</p>
+            
+                <input type="text" name="Name"  id="text">
+                <input type="text" name="Name"  id="text">
+                <input type="text" name="Name"  id="text">
+                <input type="text" name="Name"  id="text">
+               
+              
+                <div class="avnata"></div>
+
+            <button onclick="newinput()">add</button>
+               
+          
+
+            <br/>
+            <p class="head">Achievements</p>
+               
+                    <input type="text" name="Name"  id="text">
+                
+                    <input type="text" name="Name"  id="text">
+               
+                <div class="avnata12"></div>
+
+            <button onclick="newinput12()">add</button>
+            <br/>
+            <p class="head">Languages</p>
+           <input type="text" name="Name"  id="text">
+           <input type="text" name="Name"  id="text">
+    
+            <div class="avnata1"></div>
+
+            <button onclick="newinput1()">add</button>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="col-div-8">
+            <div class="content-box">
+            <p class="head">profile</p>
+            <div class="desc">
+                <div class="textarea1" contenteditable=""></div>
+            </div>
+            </div>
+            <br>
+           
+            <p class="head">projects</p>
+
+           
+            <div class="desc">
+                <div class="textarea1" contenteditable=""></div>
+            </div>
+
+            <br/>
+
+            <p class="head">Education</p>
+            
+            <div class="desc">
+                <div class="textarea1" contenteditable=""></div>
+                <br>
+                
+            </div>
+            </div>
+            </div>
+            <button id="sub" onclick="function1()">submit</button>
+        </div>
+      <!-- </div>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+        <br/> -->
+       
+        <script>
+
+            let profilepic=document.getElementById("profile-pic");
+   
+        let inputFile=document.getElementById("input-file");
+   
+        inputFile.onchange=function(){
+   
+            profilepic.src=URL.createObjectURL(inputFile.files[0]);
+   
+       
+   
+        }
+   
+        var id=0;
+   
+        function newinput(){
+   
+     
+   
+    const parent=document.querySelector('.avnata')
+   
+    var field=document.createElement('input')
+   
+    field.className="myclassname"
+   
+    field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:2px;"
+   
+    field.id="input"+id;
+   
+    parent.appendChild(field);
+   
+    id+=1;
+   
+    }
+   
+    function newinput1(){
+   
+     
+   
+    const parent=document.querySelector('.avnata1')
+   
+    var field=document.createElement('input')
+   
+    field.className="myclassname"
+   
+    field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:2px;"
+   
+    field.id="input"+id;
+   
+    parent.appendChild(field);
+   
+    id+=1;
+   
+    }
+ 
+    function newinput12(){
+   
+        const parent=document.querySelector('.avnata12')
+   
+   var field=document.createElement('input')
+  
+   field.className="myclassname"
+  
+   field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:2px;"
+  
+   field.id="input"+id;
+  
+   parent.appendChild(field);
+  
+   id+=1;
+   
+   
+   
+    }
+   
+    function function1(){
+   
+       
+   
+        window.print();
+   
+    }
+   
+     
+   
+        </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume4.css">
+    
+</head>
+<body>
+    
+      <div class="container">
+        <div class="card-one">
+            <!-- <div class="profile"></div> -->
+            <div class="profile-img"><img src="emp.jpg" alt="" id="profile-pic">
+                <label for="input-file" id="l22">update image</label>
+                <input type="file" name="" id="input-file" accept="image/jpeg, image/png, image/jpg">
+            </div>
+            <div class="contact-box">
+               <div class="con"><h2 >Contact</h2></div>
+                
+                <div>
+                    
+                    <div class="text"><img src="phone.png" alt="" srcset="" width="20px" height="20px"><input type="tel" name="tel" id="tel"></div>
+                </div>
+                <div>
+                    
+                    <div class="text"><img src="location.png" alt="" srcset="" width="20px" height="20px"><input type="tel" name="tel" id="tel"></div>
+                </div>
+                <div>
+                    
+                    <div class="text"><img src="linkedin.png" alt="" srcset="" width="20px" height="20px"><input type="tel" name="tel" id="tel"></div>
+                </div>
+                <div>
+                  
+                    <div class="text"><img src="email.png" alt="" srcset="" width="20px" height="20px"><input type="email" name="" id="email"></div>
+                </div>
+            </div>
+            <div class="personal-box">
+                <h2>Personal Skills</h2>
+                
+                
+                
+                <div id="skill">
+                    <input type="text" name="" id="s1">
+                    <input type="text" name="" id="s1">
+                    <input type="text" name="" id="s1">
+                    </div>
+                    <div class="avnata1"></div>
+                    <button onclick="newinput1()">add</button>
+            </div>
+
+            <div class="hobbies-box">
+                <h2>Hobies</h2>
+                <div class="logo">
+                    
+                    <div id="hobbi">
+                        <input type="text" name="" id="h1">
+                        <input type="text" name="" id="h1">
+                        <input type="text" name="" id="h1">
+                        <input type="text" name="" id="h1">
+                        </div>
+                    <div class="avnata12"></div>
+                    <button onclick="newinput12()">add</button>
+                </div>
+            </div>
+      </div>
+
+      <div class="card-two">
+        <div class="head-title">
+            <h1><input type="text" name="" id="h11">
+                <br>
+                <b> <input type="text" name="" id="h11"></b>
+            </h1>
+        </div>
+        <div class="occ">
+            <h2> <input type="text" name="" id="h1"></h2>
+        </div>
+
+        <div class="group-1">
+            <div class="box">
+                <h2>About Me</h2>
+            </div>
+            <div class="desc">
+                
+                <div class="textarea1" contenteditable=""></div>
+            </div>
+        </div>
+
+        <div class="group-2">
+            <div class="box">
+                <h2>Education</h2>
+            </div>
+            <div class="desc">
+                
+                <div id="education">
+                    <table class="table">
+                        <tr>
+                            <th >year</th>
+                            <th >institute</th>
+                            <th></th>
+                        </tr>
+                        <tr class="g">
+                            <td ><input type="text" id="f"></td>
+                            <td ><input type="text" id="gfg"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td ><input type="text" id="f"></td>
+                            <td ><input type="text" id="gfg"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="f"></td>
+                            <td><input type="text" id="gfg"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="f"></td>
+                            <td><input type="text" id="gfg"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <button onclick="newinput123()">add</button>
+            </div>
+        </div>
+
+        <div class="group-3">
+            <div class="box">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="desc">
+               
+                <div class="textarea1" contenteditable="" ></div>
+            </div>
+        </div>
+
+        <div class="group-4">
+            <div class="box">
+                <h2>Signature and Date</h2>
+            </div>
+            <div class="desc">
+                <ul>
+                    <li> 
+                    <div>Signature with date :__________________</div> 
+                </li> </ul>
+            </div>
+        </div>
+        <button id="sub" onclick="function1()">submit</button>
+      </div>
+     
+    </div>
+    <script>
+        let profilepic=document.getElementById("profile-pic");
+    let inputFile=document.getElementById("input-file");
+    inputFile.onchange=function(){
+        profilepic.src=URL.createObjectURL(inputFile.files[0]);
+    
+    }
+    var id=0;
+    function newinput1(){
+
+const parent=document.querySelector('.avnata1')
+var field=document.createElement('input')
+field.className="myclassname"
+field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin-top: 5%;"
+field.id="input"+id;
+parent.appendChild(field);
+id+=1;
+}
+function newinput12(){
+
+const parent=document.querySelector('.avnata12')
+var field=document.createElement('input')
+field.className="myclassname"
+field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin-top: 5%;"
+field.id="input"+id;
+parent.appendChild(field);
+id+=1;
+}
+function newinput123(){
+
+const parent=document.querySelector('table')
+var field=document.createElement('input')
+field.className="myclassname1"
+// field.style="display:flex;"
+field.style="border:0.1px solid light-black;text-align: center;letter-spacing: 1px;width:170px"
+field.id="input"+id;
+parent.appendChild(field);
+var field=document.createElement('input')
+field.className="myclassname1"
+// field.style="display:flex;"
+field.id="input"+id;
+field.style="border:0.1px solid light-dark;margin-left:1px;width:250px"
+parent.style="display:table-row-group;"//we can use inline,inline-block
+parent.appendChild(field);
+id+=1;
+}
+function function1(){
+    
+    window.print();
+}
+
+    </script>
+ </body>
+</html>
+

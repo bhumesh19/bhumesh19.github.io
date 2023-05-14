@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header"><marquee behavior="" direction=""> click on the image <div class="rocket"></div>
+        <div class="fass"> <div class="gas gas1"></div>
+        <div class="gas gas2"></div>
+        <div class="gas gas3"></div>
+        <div class="gas gas4"></div></div></marquee>
+    
+    </div>
+    <div class="links">
+       
+       <a href="resume.html"><img src="resume.png" alt="no" srcset=""></a>
+        <a href="resume1.html"><img src="resume1.png" alt="no" srcset=""></a>
+        <a href="resume2.html"><img src="resume2.png" alt="no" srcset=""></a>
+        <a href="resume3.html"><img src="resume3.png" alt="no" srcset=""></a>
+        <a href="resume4.html"><img src="resume4.png" alt="no" srcset=""></a>
+        <a href="resume5.html"><img src="resume5.png" alt="no" srcset=""></a>
+        <a href="resume6.html"><img src="resume6.png" alt="no" srcset=""></a>
+        <a href="resume7.html"><img src="resume7.png" alt="no" srcset=""></a>
+        <a href="resume8.html"><img src="resume8.png" alt="no" srcset=""></a>
+    </div>
+</body>
+<style>
+    img{
+     width: 70vb;
+        height: 70vh;
+        border: 5px solid rgb(201, 201, 176);
+      margin-top: 50px;
+   font-size: 14px;
+    transition-property: width font-size;
+    transition-duration: 2s;
+    }
+    img:hover{
+        width: 80vb;
+        height: 80vh;
+    }
+    span{
+        position: r
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .links{
+ 
+       display: grid;
+       grid-template-columns:auto auto auto ;
+       align-items: center;
+    }
+    .header{
+        font-size: 5em;
+        position: relative;
+        animation: shake 5s infinite linear;
+        
+   
+    }
+    .rocket{
+ background-image: linear-gradient(120deg,#2980b9,#8e44ad);
+    height: 50px;
+    width: 25px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    left: 42%;
+    top: -60px;
+  transform: rotate(270deg);
+}
+.rocket::before{
+    position: absolute;
+    content: "";
+    background-color: #39beff;
+    height: 20px;
+    width: 55px;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    right: -15px;
+    bottom: 0;
+}
+.rocket::after{
+    position: absolute;
+    content: "";
+    background-color: #39beff;
+    height: 4px;
+    width: 15px;
+    border-radius:0 0 2px 2px  ;
+    bottom: -4px;
+    left: 5px;
+}
+.gas{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(29, 203, 195);
+    position: relative;
+    left: 70%;
+    top: -60px;
+    border-radius: 50%;
+    transform: rotate(60deg);
+    animation: spin1 5s infinite linear;
+}
+.fass{
+    transform: rotate(90deg);
+    top: 3px;
+    position:absolute;
+    left: 43%;
+}
+@keyframes spin1 {
+    /* 0%{
+        transform: rotate(20deg,10deg);
+    }
+    100%{
+        transform: rotate(20deg,10deg);
+    } */
+    100%{
+        transform: scale(0.5);
+        
+    }
+}
+@keyframes shake{
+	25%{
+		color: #00f7ff;
+	}
+	50%{
+		color: #c61da7;
+	}
+	75%{
+		color: #f62020;
+	}
+	100%{
+		color: #8215e9;
+	}
+}
+@media  only screen  and (max-width:1080px){
+    .rocket{
+        left:70%;
+        position: relative;
+    }
+   .fass{
+    left: 72%;
+   }
+  
+    
+}
+</style>
+</html> 
+

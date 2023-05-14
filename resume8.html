@@ -1,0 +1,279 @@
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive CV </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="resume8.css">
+    <link rel="stylesheet" type="text/css" href="css/data.css">
+</head>
+<body>
+<div class="container">
+    <div class="left_Side">
+        <div class="profileText">
+            
+            <div class="profile-img"><img src="emp.jpg" alt="" id="profile-pic">
+
+                <label for="input-file" id="l22">update image</label>
+
+                <input type="file" name="" id="input-file" accept="image/jpeg, image/png, image/jpg">
+
+            </div>
+
+            <br>
+           
+            <span><input type="text" name="Name" placeholder="Name" id="text"></span>
+            <br>
+            <span><input type="text" name="Role" placeholder="Role" id="text"> </span> </h2>
+        </div>
+
+        <div class="contactInfo">
+            <h3 class="title">Contact Info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text"><input type="text" name="Name" id="phone"></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    <span class="text"><input type="text" name="Name" id="meassage"></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="text"><input type="text" name="Name" id="text"></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                    <span class="text"><input type="text" name="Name" id="linked in"></span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span class="text"><input type="text" name="location" id="text"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo education">
+            <h3 class="title">Education</h3>
+            
+            <div>
+            <input type="text" placeholder="year">
+            <input type="text" placeholder="degree">
+            <input type="text" placeholder="college name">
+            </div>
+            <br>
+            <div>
+            <input type="text" placeholder="year">
+            <input type="text" placeholder="degree">
+            <input type="text" placeholder="college name">
+            </div>
+            <br>
+            <div>
+                <input type="text" placeholder="year">
+                <input type="text" placeholder="degree">
+                <input type="text" placeholder="college name">
+                </div>
+            
+           
+        </div>
+        <div class="contactInfo language">
+            <h3 class="title">Languages</h3>
+           
+                   <input type="text" name="Name" id="text">
+            
+                   <input type="text" name="Name" id="text">
+            
+                    <input type="text" name="Name" id="text">
+                    <div class="avnata12"></div>
+
+                    <button onclick="newinput12()">add</button>
+
+        </div>
+    </div>
+    <div class="right_Side">
+        <div class="about">
+            <h2 class="title2">Profile</h2>
+            <div class="desc">
+                <div class="textarea1" contenteditable=""></div>
+            </div>
+        </div>
+        <div class="about">
+            <h2 class="title2">Experience</h2>
+            <div class="desc">
+                <div class="textarea1" contenteditable=""></div>
+            </div>
+            </div>
+            <div class="about">
+                <h2 class="title2">Projects</h2>
+                <div class="desc">
+                    <div class="textarea1" contenteditable=""></div>
+                </div>
+                </div>
+           
+        <div class="about">
+            <h2 class="title2">Professionals skills</h2>
+            <div class="box">
+              
+             <input type="text" name="Name" id="text">
+             <input type="text" name="Name" id="text">
+          </div>
+          <div class="avnata1"></div>
+          <button onclick="newinput1()">add</button>
+        </div>
+        <div class="aboutinterest">
+            <h2 class="title2">Interests</h2>
+            <input type="text" name="Name" id="interst1">
+            
+            <input type="text" name="Name" id="interst1">
+         
+            <div class="avnata123"></div>
+
+            <button onclick="newinput1231()">add</button>
+        </div>
+        <br>
+        <button id="sub" onclick="function1()">submit</button>
+
+    </div>
+    
+
+</div>
+
+<script>
+
+let profilepic=document.getElementById("profile-pic");
+
+let inputFile=document.getElementById("input-file");
+
+inputFile.onchange=function(){
+
+    profilepic.src=URL.createObjectURL(inputFile.files[0]);
+
+
+}
+
+
+var id=0;
+
+function newinput(){
+
+ 
+
+    const parent=document.querySelector('.avnata')
+
+    var field=document.createElement('input')
+
+    field.className="myclassname"
+
+    field.style="display:grid;font-weight: 600; border-radius: 4px;text-align: center;letter-spacing: 1px;"
+
+    field.id="input"+id;
+
+    parent.appendChild(field);
+
+    id+=1;
+
+}
+
+function newinput1(){
+
+ 
+
+    const parent=document.querySelector('.avnata1')
+
+    var field=document.createElement('input')
+
+    field.className="myclassname"
+
+    field.style="display:grid;font-weight: 600;text-align: center;letter-spacing: 1px;margin:5px;"
+
+    field.id="input"+id;
+
+    parent.appendChild(field);
+
+    id+=1;
+
+}
+
+function newinput12(){
+
+ 
+
+    const parent=document.querySelector('.avnata12')
+
+    var field=document.createElement('input')
+
+    field.className="myclassname"
+
+    field.style="display:grid;font-weight: 600;text-align: center;letter-spacing: 1px;margin:5px;"
+
+    field.id="input"+id;
+
+    parent.appendChild(field);
+
+    id+=1;
+
+}
+function newinput1231(){
+
+ 
+
+const parent=document.querySelector('.avnata123')
+
+var field=document.createElement('input')
+
+field.className="myclassname"
+
+field.style="display:grid;font-weight: 600; text-align: center;letter-spacing: 1px;margin:5px;"
+
+field.id="input"+id;
+
+parent.appendChild(field);
+
+id+=1;
+
+}
+
+function newinput123(){
+
+ 
+
+    const parent=document.querySelector('table')
+
+    var field=document.createElement('input')
+
+    field.className="myclassname1"
+
+
+    field.style="border:0.1px solid light-black;text-align: center;letter-spacing: 1px;"
+
+    field.id="input"+id;
+
+    parent.appendChild(field);
+
+    var field=document.createElement('input')
+
+    field.className="myclassname1"
+
+    field.id="input"+id;
+
+    field.style="border:0.1px solid light-dark;width:60%;margin-left:3px;"
+
+    parent.style="display:table-row-group;"
+
+    parent.appendChild(field);
+
+    id+=1;
+
+}
+
+function function1(){
+
+   
+
+    window.print();
+
+}
+</script>
+</body>
+</html>

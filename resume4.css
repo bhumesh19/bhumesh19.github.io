@@ -1,0 +1,261 @@
+* { 
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #acb0b4;
+    text-transform:uppercase;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 297mm;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container .card-one {
+    padding: 40px 20px;
+    padding-left: 35px;
+    background-color: #d1d1d1;
+    width: 100%;
+    color: #313131;
+    
+    
+}
+
+/* .container .card-one .profile {
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid #2c2b29;
+    background-image: url("istockphoto.jpg");
+    background-size: 100%;
+} */
+
+.container .card-one .contact-box {
+    margin-top: 10px;
+}
+
+.container .card-one .contact-box>* {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.container .card-one .contact-box>* .text {
+    display: inline-flex;
+    word-break: break-all;
+}
+
+.container .card-one .personal-box {
+    margin-top: 35px;
+}
+
+/* .container .card-one .personal-box .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #313131;
+    border-radius: 50%;
+    margin-left: 4px;
+} */
+
+/* .container .card-one .personal-box .dot.active {
+    background-color: #b89258;
+} */
+
+.container .card-one .hobbies-box .logo {
+    margin: 10px 0px;
+    /* display: grid; */
+    grid-template: 1fr 1fr/1fr 1fr;
+    font-size: 2.8em;
+    grid-row-gap: 15px;
+}
+
+.container .card-two {
+    background-color: #173c62;
+    padding: 40px 20px;
+    padding-right: 75px;
+    color: #b5b5b4;
+}
+
+.container .card-two .haed-title {
+    font-size: 2.1em;
+    color: #b89258;
+    font-weight: 400;
+}
+
+.container .card-two .box {
+    display: inline-block;
+    padding: 2px 70px 2px 20px;
+    margin-left: -20px;
+    margin-top: 35px;
+    background-color: #b89258;
+    color: #2c2b29;
+}
+
+
+.profile-img{
+	height: 180px;
+	width: 180px;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	/* border: 10px solid #fbb03b;
+	box-shadow: 6px 7px 9px 5px #fbb03b73; */
+}
+.profile-img img{
+	width: 100%;
+	border-radius: 50%;
+	height: 180px;
+	
+}
+
+
+label{
+	display: block;
+	width: 140px;
+	background: #1f1e1e;
+	color: #ffffff;
+	padding: 5px;
+	/* border-radius: 5px; */
+	cursor: pointer;
+	position: relative;
+
+}
+label:hover{
+	background-color: rgb(2, 2, 2);
+    color: #08ecf4;
+}
+input[type=file]
+{
+	display: none;
+}
+.textarea1{
+    width: 450px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 2px;
+    
+
+}
+table{
+	border: 0.5px solid black;
+	width: 400px;
+    margin-top: 2px;
+	
+	
+}
+#f{
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 14px;
+	
+}
+
+#gfg{
+	width: 250px;
+	font-size: 14px;
+}
+button{
+	/* margin-top: 80px; */
+	width: 100px;
+	letter-spacing: 5px;
+	color: #f2f8f8;
+	background-color: #1A91F0;
+	margin-top: 10px;
+	height: 40px;
+	border: 1px solid;
+	
+}
+button:hover{
+	background-color: rgb(0, 5, 8);
+	
+}
+@media print{
+	button{
+		display: none;
+	}
+    #l22{
+        display: none;
+    }
+	.textarea1{
+        border: none;
+    }
+	input{
+        border: none;
+    }
+	.table{
+		border: none;
+	}
+	.myclassname1{
+		border: none;
+	}
+	#gfg,#f{
+		border: none;
+	}
+	
+}
+.skill{
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: white;
+}
+#l1,#s1,#h1{
+	height: 20px;
+	margin-top: 5%;
+	letter-spacing: 2px;
+	text-transform:capitalize;
+}	
+#skill,#hobbi{
+	display:grid;
+	width:  200px  ;
+	font-size: 16px;
+    
+}
+.hobbies-box h2{
+    margin-left: 50px;
+}
+input{
+	text-align: center;
+	letter-spacing: 1px;
+	/* font-weight: 600; */
+    font-size: 16px;
+    text-transform:capitalize;
+    
+}
+#h11{
+    font-size: 1.5em;
+    text-align: start;
+    text-transform:capitalize;
+}
+th{
+    background-color: #648e46;
+    color: #0a0a0a;
+}
+.con h2{
+margin-top: 20px;
+margin-left: 20px;
+}
+.occ input{
+    font-size: 1em;
+    text-align: start;
+    
+}
+.occ{
+    margin-top:-20px;
+}
