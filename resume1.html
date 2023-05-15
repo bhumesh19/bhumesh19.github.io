@@ -132,6 +132,7 @@
             
                 <div class="avnata1"></div>
             <button onclick="newinput1()">add</button>
+                <button onclick="function3()">remove</button>
             </div>  
         </div>
 
@@ -157,6 +158,7 @@
                 </div>
                 <div class="avnata2"></div>
             <button onclick="newinput2()">add</button>
+                <button onclick="function2()">remove</button>
             </div>
         </div>
 
@@ -177,12 +179,12 @@
     </div>
 </body>
 <script>
-    let profilepic=document.getElementById("profile-pic");
-let inputFile=document.getElementById("input-file");
-inputFile.onchange=function(){
-    profilepic.src=URL.createObjectURL(inputFile.files[0]);
+//     let profilepic=document.getElementById("profile-pic");
+// let inputFile=document.getElementById("input-file");
+// inputFile.onchange=function(){
+//     profilepic.src=URL.createObjectURL(inputFile.files[0]);
 
-}
+// }
 var id=0;
 function newinput1(){
 
@@ -228,6 +230,34 @@ parent1.appendChild(input);
 parent1.appendChild(i);
 id=id+1
 }
+    function function2(){
+     
+
+     
+     const parent=document.querySelector('.avnata2')
+    //  const parent1=document.querySelector('div')
+         var field=document.getElementById("input"+(id-1));
+       
+       
+      
+    
+        //  parent1.removeChild(field);
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
+    function function3(){
+        
+     const parent=document.querySelector('.avnata1')
+   
+         var field=document.getElementById("input"+(id-1));
+        
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
 function newinput3(){
 
 const parent=document.querySelector('.avnata3')
