@@ -83,6 +83,7 @@ $( "#gfg" ).datepicker({
 			</div>
 			<div class="avnata"></div>
             <button onclick="newinput()">add</button>
+			<button onclick="function5()">remove</button>
 		</div>
 		<br>
 
@@ -271,6 +272,21 @@ inputFile.onchange=function(){
 		  
 			  
 		  }
+	 function function5(){
+		  
+	 
+		  // const parent=document.querySelector('myclassname')
+		  const parent=document.querySelector('.avnata')
+			  var field=document.getElementById("input"+(id-1));
+			  console.log(field);
+			
+			  // parent.removeChild(field)
+			  parent.removeChild(field);
+		  id=id-1;
+		  
+			  
+		  }
+	
 </script>
 </body>
 </html>
