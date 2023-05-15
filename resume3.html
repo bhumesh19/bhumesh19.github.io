@@ -160,6 +160,7 @@
                     </div>
                     <div class="avnata1"></div>
                 <button onclick="newinput1()">add</button>
+		     <button onclick="function4()">remove</button>
                    
                 </div>
                 <div class="input">
@@ -181,6 +182,7 @@
                     </div>
                     <div class="avnata2"></div>
                 <button onclick="newinput2()">add</button>
+			 <button onclick="function2()">remove</button>
                 </div>
                 <div class="input">
                 <div class="hobbies">Languages</div>
@@ -201,6 +203,7 @@
                     </div>
                     <div class="avnata3"></div>
                 <button onclick="newinput3()">add</button>
+			<button onclick="function3()">remove</button>
                 </div>
         </div>
     </div>
@@ -257,6 +260,45 @@ id=id+1
 // }
 
 }
+	    function function2(){
+     
+
+     
+     const parent=document.querySelector('.avnata2')
+    //  const parent1=document.querySelector('div')
+         var field=document.getElementById("input"+(id-1));
+       
+       
+      
+    
+        //  parent1.removeChild(field);
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
+    function function3(){
+        
+     const parent=document.querySelector('.avnata3')
+   
+         var field=document.getElementById("input"+(id-1));
+        
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
+	    function function4(){
+        
+     const parent=document.querySelector('.avnata1')
+   
+         var field=document.getElementById("input"+(id-1));
+        
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
 function newinput2(){
 
 const parent=document.querySelector('.avnata2')
