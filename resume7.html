@@ -289,6 +289,7 @@
                 <div class="avnata123"></div>
 
                 <button onclick="newinput123()">add</button>
+               <button onclick="function4()">remove</button>
                 </div>
                 </div>
     </div>
@@ -307,6 +308,7 @@
     <div class="avnata12"></div>
 
     <button onclick="newinput12()">add</button>
+          <button onclick="function2()">remove</button>
     </div>
     <button id="sub" onclick="function1()">submit</button>
     </div>
@@ -401,6 +403,42 @@ parent.appendChild(field);
 id+=1;
 
 }
+  function function3(){
+
+const parent=document.querySelector('.avnata1')
+//  const parent1=document.querySelector('div')
+    var field=document.getElementById("input"+(id-1));
+    parent.removeChild(field);
+id=id-1;
+
+}
+function function2(){
+
+const parent=document.querySelector('.avnata12')
+//  const parent1=document.querySelector('div')
+var field=document.getElementById("input"+(id-1));
+parent.removeChild(field);
+id=id-1;
+
+}
+function function4(){
+     
+
+     // const parent=document.querySelector('myclassname')
+     const parent=document.querySelector('table')
+         var field=document.getElementById("input"+(id-1));
+         console.log(field);
+       
+         // parent.removeChild(field)
+         parent.removeChild(field);
+         var field=document.getElementById("input"+(id-1));
+         console.log(field);
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
+
 
 function function1(){
 
