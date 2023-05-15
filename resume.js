@@ -4,7 +4,7 @@ function newinput(){
     const parent=document.querySelector('.avnata')
     var field=document.createElement('input')
     field.className="myclassname"
-    field.style="display:grid; text-align: center;letter-spacing: 1px;font-size:16px;margin:5px"
+    field.style="display:grid; text-align: center;letter-spacing: 1px;font-size:16px;margin:5px;border-radius: 4px;"
     field.id="input"+id;
     parent.appendChild(field);
     id+=1;
@@ -14,7 +14,7 @@ function newinput1(){
     const parent=document.querySelector('.avnata1')
     var field=document.createElement('input')
     field.className="myclassname"
-    field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:5px"
+    field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:5px;border-radius: 4px;"
     field.id="input"+id;
     parent.appendChild(field);
     id+=1;
@@ -24,7 +24,7 @@ function newinput12(){
     const parent=document.querySelector('.avnata12')
     var field=document.createElement('input')
     field.className="myclassname"
-    field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:5px"
+    field.style="display:grid;text-align: center;letter-spacing: 1px;font-size:16px;margin:5px;border-radius: 4px;"
     field.id="input"+id;
     parent.appendChild(field);
     id+=1;
