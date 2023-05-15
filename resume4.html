@@ -50,6 +50,7 @@
                     </div>
                     <div class="avnata1"></div>
                     <button onclick="newinput1()">add</button>
+                <button onclick="function2()">remove</button>
             </div>
 
             <div class="hobbies-box">
@@ -64,6 +65,7 @@
                         </div>
                     <div class="avnata12"></div>
                     <button onclick="newinput12()">add</button>
+                    <button onclick="function3()">remove</button>
                 </div>
             </div>
       </div>
@@ -122,6 +124,7 @@
                     </table>
                     </div>
                     <button onclick="newinput123()">add</button>
+                  <button onclick="function4()">remove</button>
             </div>
         </div>
 
@@ -178,6 +181,51 @@ field.id="input"+id;
 parent.appendChild(field);
 id+=1;
 }
+        function function2(){
+     
+
+// const parent=document.querySelector('myclassname')
+const parent=document.querySelector('.avnata1')
+    var field=document.getElementById("input"+(id-1));
+    console.log(field);
+  
+    // parent.removeChild(field)
+    parent.removeChild(field);
+id=id-1;
+
+    
+}
+function function3(){
+     
+
+     // const parent=document.querySelector('myclassname')
+     const parent=document.querySelector('.avnata12')
+         var field=document.getElementById("input"+(id-1));
+         console.log(field);
+       
+         // parent.removeChild(field)
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
+     function function4(){
+     
+
+     // const parent=document.querySelector('myclassname')
+     const parent=document.querySelector('table')
+         var field=document.getElementById("input"+(id-1));
+         console.log(field);
+       
+         // parent.removeChild(field)
+         parent.removeChild(field);
+         var field=document.getElementById("input"+(id-1));
+         console.log(field);
+         parent.removeChild(field);
+     id=id-1;
+     
+         
+     }
 function newinput123(){
 
 const parent=document.querySelector('table')
