@@ -159,7 +159,7 @@ margin: 20px 10px 10px 20px;
         letter-spacing: 0.05em;
         z-index: 2;
         font-size: 3em;
-        text-transform: capitalize;
+/*         text-transform: capitalize; */
     
        
     }
@@ -448,7 +448,7 @@ margin: 20px 10px 10px 20px;
       
     }
 input{
-    text-transform: capitalize;
+/*     text-transform: capitalize; */
 }
 .textarea1,.textarea{
     text-transform: capitalize;
