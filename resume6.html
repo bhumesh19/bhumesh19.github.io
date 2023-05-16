@@ -180,7 +180,7 @@
             
                 <div class="avnata1"></div>
             <button onclick="newinput1()">add</button>
-                  <button onclick="function4()">remove</button>
+            <button onclick="function4()">remove</button>
             </div>  
         </div>
 
@@ -206,7 +206,7 @@
                 </div>
                 <div class="avnata2"></div>
             <button onclick="newinput2()">add</button>
-                 <button onclick="function2()">remove</button>
+            <button onclick="function2()">remove</button>
             </div>
         </div>
 
@@ -242,11 +242,12 @@ var input=document.createElement('input')
 var span=document.createElement('span')
 var i=document.createElement('i')
 parent1.className="input3"
+parent1.id="input"+id
 input.className="myclassname"
 span.className="span"
 i.className="i"
 parent.style="position:relative"
-parent1.id="input"+id
+
 input.id="input"+id;
 span.id="input"+id;
 i.id="input"+id;
@@ -267,7 +268,7 @@ parent1.id="input"+id
 var i=document.createElement('i')
 parent1.className="input3"
 input.className="myclassname"
-parent1.id="input"+id
+
 i.className="i"
 parent.style="position:relative"
 input.id="input"+id;
@@ -298,7 +299,7 @@ parent1.appendChild(input);
 parent1.appendChild(i);
 id=id+1
 }
-    function function3(){
+function function3(){
 
      const parent=document.querySelector('.avnata3')
     //  const parent1=document.querySelector('div')
@@ -324,6 +325,7 @@ const parent=document.querySelector('.avnata1')
     parent.removeChild(field);
 id=id-1;
 
+}
 function function1()
 {
 window.print()
