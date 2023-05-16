@@ -220,7 +220,8 @@
                 </div>
                 <div class="avnata1"></div>
             <button onclick="newinput1()">add</button>
-               <button onclick="function4()">remove</button>
+            <button onclick="function4()">remove</button>
+               
             </div>
             <div class="input">
             <div class="work">Personal Projects</div>
@@ -241,7 +242,7 @@
                 </div>
                 <div class="avnata2"></div>
             <button onclick="newinput2()">add</button>
-		     <button onclick="function2()">remove</button>
+            <button onclick="function2()">remove</button>
             </div>
             <div class="input">
             <div class="hobbies">Languages</div>
@@ -262,7 +263,7 @@
                 </div>
                 <div class="avnata3"></div>
             <button onclick="newinput3()">add</button>
-		    <button onclick="function3()">remove</button>
+            <button onclick="function3()">remove</button>
             </div>
     </div>
 </div>
@@ -287,13 +288,13 @@ var input=document.createElement('input')
 var span=document.createElement('span')
 var i=document.createElement('i')
 parent1.className="input3"
+parent1.id="input"+id;
 input.className="myclassname"
 span.className="span"
 i.className="i"
 parent.style="position:relative"
 // input.style=" display:grid;position:relative;width: 80%;padding:  10px 10px ;background: transparent;border: none;outline:none;color: #000207;font-size: 0.7em;font-weight: 600;letter-spacing: 0.05em;z-index: 2;onfocus:myfunction(this);"
 input.id="input"+id;
-	parent1.id="input"+id;
 span.id="input"+id;
 i.id="input"+id;
 // i.style="position: relative;display:grid;width: 80% !important;background: #00c8aa;height: 2px;left: 0;bottom: 0;border-radius: 4px;transition: 0.5s;pointer-events: none;"
@@ -327,31 +328,11 @@ function newinput2(){
 const parent=document.querySelector('.avnata2')
 const parent1=document.createElement('div')
 var input=document.createElement('input')
-
+parent1.id="input"+id;
 var i=document.createElement('i')
 parent1.className="input3"
 input.className="myclassname"
 
-i.className="i"
-parent.style="position:relative"
-input.id="input"+id;
-parent1.id="input"+id;
-i.id="input"+id;
-parent.append(parent1);
-parent1.appendChild(input);
-parent1.appendChild(i);
-id=id+1
-}
-function newinput3(){
-
-const parent=document.querySelector('.avnata3')
-const parent1=document.createElement('div')
-var input=document.createElement('input')
-
-var i=document.createElement('i')
-parent1.className="input3"
-input.className="myclassname"
-parent1.id="input"+id;
 i.className="i"
 parent.style="position:relative"
 input.id="input"+id;
@@ -362,7 +343,7 @@ parent1.appendChild(input);
 parent1.appendChild(i);
 id=id+1
 }
-	function function3(){
+function function3(){
      
      const parent=document.querySelector('.avnata3')
   
@@ -398,6 +379,26 @@ id=id+1
  
      
  }
+function newinput3(){
+
+const parent=document.querySelector('.avnata3')
+const parent1=document.createElement('div')
+var input=document.createElement('input')
+
+var i=document.createElement('i')
+parent1.className="input3"
+input.className="myclassname"
+parent1.id="input"+id;
+i.className="i"
+parent.style="position:relative"
+input.id="input"+id;
+
+i.id="input"+id;
+parent.append(parent1);
+parent1.appendChild(input);
+parent1.appendChild(i);
+id=id+1
+}
 function function1()
 {
 window.print()
