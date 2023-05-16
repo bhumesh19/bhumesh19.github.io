@@ -507,7 +507,7 @@ display: flex;
       
     }
 input{
-    text-transform: capitalize;
+/*     text-transform: capitalize; */
 }
 .textarea1,.textarea{
     text-transform: capitalize;
