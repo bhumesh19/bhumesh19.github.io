@@ -10,7 +10,7 @@
 body {
   background: #585c68;
   font-size: 14px;
-  line-height: 22px;
+/*   line-height: 22px; */
   color: #555555;
    min-height: 100vh;
   display: flex;
